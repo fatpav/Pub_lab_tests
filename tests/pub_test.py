@@ -10,5 +10,6 @@ class TestPub(unittest.TestCase):
         self.assertEqual("Ox", self.pub.name)
 
     def test_pub_has_cash(self):
-        
+        self.assertEqual(100.00, self.pub.cash)
+
 
