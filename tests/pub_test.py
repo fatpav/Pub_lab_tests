@@ -24,6 +24,5 @@ class TestPub(unittest.TestCase):
     def test_drink_has_price(self):
         self.assertEqual(5.00, self.drinks.price)
 
-    def test_find_drink_by_name(self):
-        pass
-        
+    def customer_buy_drink(self):
+        self.assertEqual()
