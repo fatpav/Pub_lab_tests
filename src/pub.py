@@ -10,6 +10,14 @@ class Pub:
     def sell_drink(self, drink):
         self.cash += drink.price
 
+    def age_check(self, customer):
+        if customer.age >= 18:
+            return True
+        
+        return False
+        
+    
+
 
 
     
