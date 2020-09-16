@@ -14,5 +14,8 @@ class TestPub(unittest.TestCase):
 
     def test_customer_has_name(self):
         self.assertEqual("Billy", self.customer.name)
+    
+    def test_customer_has_cash(self):
+        self.assertEqual(50.00, self.customer.cash)
 
 
