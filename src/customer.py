@@ -1,4 +1,5 @@
 from src.drinks import Drinks 
+from src.pub import Pub
 
 class Customer:
     def __init__(self, name, wallet):
@@ -7,5 +8,5 @@ class Customer:
 
     def buy_drink(self, drink):
         self.wallet -= drink.price
-        print(self.wallet)
-           
+        
+        
