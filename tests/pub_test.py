@@ -43,9 +43,9 @@ class TestPub(unittest.TestCase):
         self.pub.add_drink_to_menu(self.drink_4)
         self.assertEqual(4, len(self.pub.menu))
 
-    @unittest.skip("delete this line to run the test")
+    
     def test_add_to_cash(self):
-        self.customer.buy_drink(self.drink)
+        self.pub.sell_drink(self.drink_1)
         self.assertEqual(105.00, self.pub.cash)
 
     
