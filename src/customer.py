@@ -6,6 +6,7 @@ class Customer:
         self.name = name
         self.wallet = wallet
         self.age = age
+        self.inebriation = 0
 
     def buy_drink(self, drink):
         self.wallet -= drink.price

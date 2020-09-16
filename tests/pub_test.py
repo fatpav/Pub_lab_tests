@@ -8,10 +8,10 @@ class TestPub(unittest.TestCase):
         self.pub = Pub("Ox", 100.00)
         self.customer_1 = Customer("Billy", 50.00, 18)
         self.customer_2 = Customer("Jimmy", 50.00, 16)
-        self.drink_1 = Drink("Beer", 5.0)
-        self.drink_2 = Drink("Wine", 7.5)
-        self.drink_3 = Drink("Spirit", 3.5)
-        self.drink_4 = Drink("Cocktail", 10.0)
+        self.drink_1 = Drink("Beer", 5.0, 5.5)
+        self.drink_2 = Drink("Wine", 7.5, 15.0)
+        self.drink_3 = Drink("Spirit", 3.5, 40.0)
+        self.drink_4 = Drink("Cocktail", 10.0, 25.0)
 
 
 
