@@ -4,8 +4,9 @@ class Pub:
         self.cash = cash
         self.menu = []
 
-    def add_drink_to_menu(self):
-        
+    def add_drink_to_menu(self, drink):
+        self.menu.append(drink)
+
 
     
     

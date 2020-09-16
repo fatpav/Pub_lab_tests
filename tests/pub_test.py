@@ -1,7 +1,7 @@
 import unittest
 from src.pub import Pub 
 from src.customer import Customer
-from src.drink import Drinks
+from src.drinks import Drink
 
 class TestPub(unittest.TestCase):
     def setUp(self):
@@ -27,17 +27,20 @@ class TestPub(unittest.TestCase):
         self.assertEqual(50.00, self.customer.wallet)
 
     def test_drink_has_name(self):
-        self.assertEqual("Beer", self.drink.name)
+        self.assertEqual("Beer", self.drink_1.name)
 
     def test_drink_has_price(self):
-        self.assertEqual(5.00, self.drink.price)
+        self.assertEqual(5.00, self.drink_1.price)
 
     def test_customer_buy_drink(self):
-        self.customer.buy_drink(self.drink)
+        self.customer.buy_drink(self.drink_1)
         self.assertEqual(45, self.customer.wallet)
 
     def test_add_drink_to_menu(self):
-        self.pub.add_drink_to_menu(self.drink)
+        self.pub.add_drink_to_menu(self.drink_1)
+        self.pub.add_drink_to_menu(self.drink_2)
+        self.pub.add_drink_to_menu(self.drink_3)
+        self.pub.add_drink_to_menu(self.drink_4)
         self.assertEqual(4, len(self.pub.menu))
 
     @unittest.skip("delete this line to run the test")
